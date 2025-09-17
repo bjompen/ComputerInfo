@@ -1,0 +1,1 @@
+"$(((Get-CimInstance -Query "SELECT IPAddress FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = true" ).IPAddress) -join ', ' )"

@@ -1,0 +1,1 @@
+"$( ((Get-NetIPAddress | Where-Object -Property InterfaceAlias -eq $((Get-VpnConnection -AllUserConnection | Where-Object -Property ConnectionStatus -eq "Connected").Name)).IPAddress) -join ', ' )"

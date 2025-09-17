@@ -1,0 +1,1 @@
+"$( ((Get-NetAdapter -Physical | Where-Object -Property Name -eq 'Ethernet').MacAddress) -join ', ' )"

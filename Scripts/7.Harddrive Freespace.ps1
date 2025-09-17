@@ -1,0 +1,1 @@
+"$( [math]::round(( ((Get-CimInstance -ClassName Win32_LogicalDisk -Property DeviceID,FreeSpace  | Where-Object -Property DeviceID -eq "$($env:SystemDrive)").FreeSpace) / 1gb),2) ) GB"
